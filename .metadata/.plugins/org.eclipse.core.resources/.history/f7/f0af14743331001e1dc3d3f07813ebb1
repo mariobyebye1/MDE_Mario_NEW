@@ -1,0 +1,17 @@
+entity User {
+    name: String
+    age: Integer
+    active: Boolean
+}
+
+screen MainScreen for User {
+    text firstNameLabel 'First Name:'
+    text lastNameLabel 'Last Name:'
+    checkbox activeCheckbox 'Is Active:'
+    button saveButton 'Save'
+    custom myWidget type MyCustomWidget 'Custom Widget:'
+}
+
+navigate from MainScreen to AnotherScreen
+
+

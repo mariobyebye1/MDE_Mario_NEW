@@ -1,0 +1,24 @@
+/* XPECT_SETUP uk.ac.kcl.inf.languages.mockup.xpect.XpectTest END_SETUP */
+
+// Example UI mockup file
+
+
+
+entity User {
+    name: String
+    age: Integer
+    active: Boolean
+}
+
+screen MainScreen for User {
+    text firstNameLabel label "First Name:"
+    text lastNameLabel label "Last Name:"
+    checkbox activeCheckbox label "Is Active:"
+    button saveButton label "Save"
+}
+
+screen AnotherScreen for User {
+	text introLabel label "Check"
+}
+
+navigate from MainScreen to AnotherScreen

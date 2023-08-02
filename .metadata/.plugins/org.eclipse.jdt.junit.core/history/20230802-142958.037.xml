@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="grammar.mockup.xt" project="uk.ac.kcl.inf.languages.mockup.xpect" tests="1" started="0" failures="1" errors="0" ignored="0">
+  <testcase name="grammar.mockup.xt: src/uk/ac/kcl/inf/languages/mockup/xpect" classname="grammar.mockup.xt: src/uk/ac/kcl/inf/languages/mockup/xpect">
+    <failure>
+      <expected>/* XPECT_SETUP uk.ac.kcl.inf.languages.mockup.xpect.XpectTest END_SETUP */&#13;
+&#13;
+// Example UI mockup file&#13;
+&#13;
+&#13;
+&#13;
+entity User {&#13;
+    name: String&#13;
+    age: Integer&#13;
+    active: Boolean&#13;
+}&#13;
+&#13;
+screen MainScreen for User {&#13;
+    text firstNameLabel label "First Name:"&#13;
+    text lastNameLabel label "Last Name:"&#13;
+    checkbox activeCheckbox label "Is Active:"&#13;
+    button saveButton label "Save"&#13;
+}&#13;
+&#13;
+&#13;
+&#13;
+screen AnotherScreen for User {&#13;
+	text introLabel label "Check"&#13;
+}&#13;
+&#13;
+navigate from MainScreen to AnotherScreen</expected>
+      <actual>error - Error executing EValidator&#13;
+error - Error executing EValidator/* XPECT_SETUP uk.ac.kcl.inf.languages.mockup.xpect.XpectTest END_SETUP */&#13;
+&#13;
+// Example UI mockup file&#13;
+&#13;
+&#13;
+&#13;
+entity User {&#13;
+    name: String&#13;
+    age: Integer&#13;
+    active: Boolean&#13;
+}&#13;
+&#13;
+screen MainScreen for User {&#13;
+    text firstNameLabel label "First Name:"&#13;
+    text lastNameLabel label "Last Name:"&#13;
+    checkbox activeCheckbox label "Is Active:"&#13;
+    button saveButton label "Save"&#13;
+}&#13;
+&#13;
+&#13;
+&#13;
+screen AnotherScreen for User {&#13;
+	text introLabel label "Check"&#13;
+}&#13;
+&#13;
+navigate from MainScreen to AnotherScreen</actual>
+      org.junit.ComparisonFailure: ERROR:Error executing EValidator ( line : 0 column : 0)
+ERROR:Error executing EValidator ( line : 0 column : 0) expected:&lt;[]/* XPECT_SETUP uk.ac...&gt; but was:&lt;[error - Error executing EValidator&#13;
+error - Error executing EValidator]/* XPECT_SETUP uk.ac...&gt;&#13;
+	at org.eclipse.xpect.xtext.lib.setup.XtextValidatingSetup.validate(XtextValidatingSetup.java:128)&#13;
+	at org.eclipse.xpect.runner.XpectFileRunner.run(XpectFileRunner.java:140)&#13;
+	at org.eclipse.xpect.runner.XpectRunner.runChild(XpectRunner.java:213)&#13;
+	at org.eclipse.xpect.runner.XpectRunner.runChild(XpectRunner.java:1)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.eclipse.xpect.runner.XpectRunner.run(XpectRunner.java:199)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+
+    </failure>
+  </testcase>
+</testrun>

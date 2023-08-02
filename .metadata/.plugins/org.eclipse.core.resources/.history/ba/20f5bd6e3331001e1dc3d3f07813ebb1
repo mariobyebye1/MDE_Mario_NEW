@@ -1,0 +1,4 @@
+entity Joke {
+	think: Integer
+}
+

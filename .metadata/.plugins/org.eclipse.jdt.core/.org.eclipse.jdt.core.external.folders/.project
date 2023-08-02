@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.org.eclipse.jdt.core.external.folders</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.link1</name>
+			<type>2</type>
+			<location>C:/Users/Admin/Desktop/MDE _sem2/MDE_Mario_NEW/uk.ac.kcl.inf.languages.mockup/bin</location>
+		</link>
+		<link>
+			<name>.link2</name>
+			<type>2</type>
+			<location>C:/Users/Admin/Desktop/MDE _sem2/MDE_Mario_NEW/uk.ac.kcl.inf.languages.mockup</location>
+		</link>
+		<link>
+			<name>.link3</name>
+			<type>2</type>
+			<location>C:/Users/Admin/Desktop/MDE _sem2/MDE_Mario_NEW/uk.ac.kcl.inf.languages.mockup.ui/bin</location>
+		</link>
+		<link>
+			<name>.link4</name>
+			<type>2</type>
+			<location>C:/Users/Admin/Desktop/MDE _sem2/MDE_Mario_NEW/uk.ac.kcl.inf.languages.mockup.ui</location>
+		</link>
+	</linkedResources>
+</projectDescription>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Xpect
+Bundle-SymbolicName: uk.ac.kcl.inf.languages.mockup.xpect
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: uk.ac.kcl.inf.languages.mockup.xpect
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Require-Bundle: org.eclipse.xpect.xtext.lib;bundle-version="0.2.0",
+ uk.ac.kcl.inf.languages.mockup;bundle-version="1.0.0",
+ uk.ac.kcl.inf.languages.mockup.ui;bundle-version="1.0.0"
