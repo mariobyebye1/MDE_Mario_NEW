@@ -27,12 +27,7 @@ public class User extends JPanel {
 		active = new Boolean();
 		add(new JLabel("active"));
 		add(active);
-		// Initialize other components here 
 	}
-
-	// Getters and setters for attributes here
-
-	// Optional methods for additional functionality
 
 }
 --- 

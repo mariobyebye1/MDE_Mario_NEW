@@ -17,11 +17,6 @@ public class User extends JPanel {
 		age = new Integer();
 		add(new JLabel("age"));
 		add(age);
-		// Initialize other components here
 	}
-
-	// Getters and setters for attributes here
-			
-	// Optional methods for additional functionality
 
 }

@@ -1,0 +1,17 @@
+entity User {
+    name: String
+    age: Integer
+}
+
+screen UserScreen for User {
+    text firstName label "First Name:"
+    text lastName label "Last Name:"
+    checkbox isAdult label "Is Adult:"
+    button save label "Save"
+}
+
+screen DashboardScreen for User {
+    button edit label "Edit"
+}
+
+navigate from UserScreen to DashboardScreen when if isAdult
