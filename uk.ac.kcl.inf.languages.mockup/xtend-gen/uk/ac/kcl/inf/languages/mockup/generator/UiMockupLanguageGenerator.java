@@ -147,20 +147,8 @@ public class UiMockupLanguageGenerator extends AbstractGenerator {
         _builder.newLineIfNotEmpty();
       }
     }
-    _builder.append("\t\t");
-    _builder.append("// Initialize other components here");
-    _builder.newLine();
     _builder.append("\t");
     _builder.append("}");
-    _builder.newLine();
-    _builder.newLine();
-    _builder.append("\t");
-    _builder.append("// Getters and setters for attributes here");
-    _builder.newLine();
-    _builder.append("\t\t\t");
-    _builder.newLine();
-    _builder.append("\t");
-    _builder.append("// Optional methods for additional functionality");
     _builder.newLine();
     _builder.newLine();
     _builder.append("}");
@@ -282,19 +270,8 @@ public class UiMockupLanguageGenerator extends AbstractGenerator {
         _builder.newLineIfNotEmpty();
       }
     }
-    _builder.append("\t\t");
-    _builder.append("// Initialize other components here");
-    _builder.newLine();
     _builder.append("\t");
     _builder.append("}");
-    _builder.newLine();
-    _builder.newLine();
-    _builder.append("\t");
-    _builder.append("// Getters and setters for attributes here");
-    _builder.newLine();
-    _builder.newLine();
-    _builder.append("\t");
-    _builder.append("// Optional methods for additional functionality");
     _builder.newLine();
     _builder.newLine();
     _builder.append("}");
@@ -320,9 +297,6 @@ public class UiMockupLanguageGenerator extends AbstractGenerator {
     _builder.newLineIfNotEmpty();
     _builder.append("\t");
     _builder.append("public void navigate() {");
-    _builder.newLine();
-    _builder.append("\t\t");
-    _builder.append("// Navigation code here");
     _builder.newLine();
     _builder.append("\t");
     _builder.append("}");

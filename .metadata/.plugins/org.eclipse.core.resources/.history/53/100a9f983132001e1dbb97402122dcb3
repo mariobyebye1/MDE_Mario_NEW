@@ -1,0 +1,73 @@
+grammar uk.ac.kcl.inf.languages.mockup.UiMockupLanguage with org.eclipse.xtext.common.Terminals
+
+generate uiMockupLanguage "http://www.ac.uk/kcl/inf/languages/mockup/UiMockupLanguage"
+
+// Root rule
+Model:
+    (elements += Entity | elements += Screen | elements += Navigation)*;
+
+Entity:
+    'entity' name = ID ('extends' extendsEntity = [Entity])?
+    '{'
+    (attributes += Attribute)*
+    '}';
+
+Attribute:
+    name = ID ':' type = DataType;
+
+enum DataType:
+    STRING = 'String'|
+    BOOLEAN = 'Boolean'|
+    INTEGER = 'Integer';
+
+Screen:
+    'screen' name = ID 'for' entity = [Entity]
+    '{'
+    (widgets += Widget)*
+    '}';
+
+Widget:
+    TextField | Checkbox | Button ;
+
+TextField:
+    'text' name = ID ('label' label = Expression)?;
+
+Checkbox:
+    'checkbox' name = ID ('label' label = Expression)?;
+
+Button:
+    'button' name = ID ('label' label = Expression)?;
+
+Navigation:
+    'navigate' 'from' source = [Screen] 'to' target = [Screen]
+    ('when' condition = Condition)?;
+
+Condition:
+    'if' expression = Expression;
+
+Expression:
+    OrExpression;
+
+OrExpression returns Expression:
+    AndExpression ('||' right = AndExpression)*;
+
+AndExpression returns Expression:
+    PrimaryExpression ('&&' right = PrimaryExpression)*;
+
+PrimaryExpression returns Expression:
+   	FeatureCall | {Expression} BoolLiteral | {Expression} StringLiteral;
+
+FeatureCall:
+    {FeatureCall} ID ('(' arguments += Expression (',' arguments += Expression)*)?;
+
+BoolLiteral:
+    'true' | 'false';
+
+StringLiteral:
+    STRING;
+
+@Override 
+terminal ID: '^'? ('a'..'z' | 'A'..'Z' | '_') ('a'..'z' | 'A'..'Z' | '0'..'9' | '_')*;
+@Override 
+terminal STRING: '"' ('\\' . | !('\\' | '"'))* '"';
+

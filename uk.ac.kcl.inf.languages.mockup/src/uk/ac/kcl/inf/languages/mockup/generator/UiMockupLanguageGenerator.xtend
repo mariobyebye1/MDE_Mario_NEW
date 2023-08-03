@@ -62,12 +62,7 @@ override doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext
 						add(new JLabel("«attribute.name»"));
 						add(«attribute.name.toFirstLower»);
 					«ENDFOR»
-					// Initialize other components here
 				}
-			
-				// Getters and setters for attributes here
-						
-				// Optional methods for additional functionality
 			
 			}
 		''')
@@ -101,12 +96,7 @@ override doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext
 						«screen.entity.name.toFirstLower».add(new JLabel("«widget.name»"));
 						«screen.entity.name.toFirstLower».add(«widget.name.toFirstLower»);
 					«ENDFOR»
-					// Initialize other components here
 				}
-			
-				// Getters and setters for attributes here
-			
-				// Optional methods for additional functionality
 			
 			}
 		''')
@@ -117,7 +107,6 @@ override doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext
 		fsa.generateFile("Navigation" + navigation.source.name + "To" + navigation.target.name + ".java", '''
 			public class Navigation«navigation.source.name»To«navigation.target.name» {
 				public void navigate() {
-					// Navigation code here
 				}
 			}
 		''')
