@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="validationTestCapitalLetter.mockup.xt" project="uk.ac.kcl.inf.languages.mockup.xpect" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="validationTestCapitalLetter.mockup.xt: src/uk/ac/kcl/inf/languages/mockup/xpect" time="0.001">
+    <testcase name="errors~0 〔src/uk/ac/kcl/inf/languages/mockup/xpect/validationTestCapitalLetter.mockup.xt〕" classname="uk.ac.kcl.inf.languages.mockup.xpect.XpectTest" time="0.001"/>
+  </testsuite>
+</testrun>

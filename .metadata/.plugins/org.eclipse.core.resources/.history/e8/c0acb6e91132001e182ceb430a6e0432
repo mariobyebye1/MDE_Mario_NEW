@@ -1,0 +1,9 @@
+/* XPECT_SETUP uk.ac.kcl.inf.languages.mockup.xpect.XpectTest END_SETUP */
+
+
+// XPECT errors --> "Entity name must start with a capital letter." at "user1"
+entity user1 {
+    name: String
+    age: Integer
+    active: Boolean
+}

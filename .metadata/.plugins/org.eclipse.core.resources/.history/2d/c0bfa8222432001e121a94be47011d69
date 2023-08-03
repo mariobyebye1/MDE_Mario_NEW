@@ -1,0 +1,8 @@
+entity User {
+    name: String
+    age: Integer
+    active: Boolean
+}
+
+
+

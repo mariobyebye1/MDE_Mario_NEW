@@ -4,19 +4,9 @@ entity User {
     active: Boolean
 }
 
-screen MainScreen for User {
-    text firstNameLabel label "First Name:"
-    text lastNameLabel label "Last Name:"
-    checkbox activeCheckbox label "Is Active:"
-    button saveButton label "Save"
+
+entity Coconut {
+    name: String
+    age: Integer
+    active: Boolean
 }
-
-
-
-//screen AnotherScreen for User {
-//	text introLabel label "Check"
-//}
-//
-//navigate from MainScreen to AnotherScreen
-
-

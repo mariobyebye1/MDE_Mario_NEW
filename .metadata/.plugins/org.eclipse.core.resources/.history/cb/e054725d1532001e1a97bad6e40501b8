@@ -1,0 +1,24 @@
+/* XPECT_SETUP uk.ac.kcl.inf.languages.mockup.xpect.XpectTest END_SETUP */
+
+entity User1 {
+    name: String
+    age: Integer
+    active: Boolean
+}
+
+
+screen MainScreen for User1 {
+    text AnotherScreen.text.introLabel
+    text lastNameLabel label "Last Name:"
+    checkbox activeCheckbox label "Is Active:"
+    button saveButton label "Save"
+    entity Joke {}
+}
+
+
+
+screen AnotherScreen for User1 {
+	text introLabel label "Check" 
+}
+
+navigate from MainScreen to AnotherScreen when if firstNameLabel 

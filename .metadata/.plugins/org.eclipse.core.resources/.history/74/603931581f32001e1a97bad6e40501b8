@@ -1,0 +1,17 @@
+package uk.ac.kcl.inf.languages.mockup.xpect;
+
+import org.eclipse.xpect.runner.XpectRunner;
+import org.eclipse.xpect.xtext.lib.tests.GeneratorTest;
+import org.eclipse.xpect.xtext.lib.tests.JvmModelInferrerTest;
+import org.eclipse.xpect.xtext.lib.tests.LinkingTest;
+import org.eclipse.xpect.xtext.lib.tests.ScopingTest;
+import org.eclipse.xpect.xtext.lib.tests.ValidationTest;
+import org.junit.runner.RunWith;
+
+@RunWith({JvmModelInferrerTest.class,
+	LinkingTest.class,
+	ScopingTest.class,
+	ValidationTest.class})
+public class XpectCodeGenerationTests extends  GeneratorTest{
+
+}
