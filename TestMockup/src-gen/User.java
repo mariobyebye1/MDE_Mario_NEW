@@ -4,7 +4,6 @@ import javax.swing.*;
 public class User extends JPanel {
 	private String name;
 	private Integer age;
-	private Boolean active;
 
 	public User() {
 	setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
@@ -18,9 +17,6 @@ public class User extends JPanel {
 		age = new Integer();
 		add(new JLabel("age"));
 		add(age);
-		active = new Boolean();
-		add(new JLabel("active"));
-		add(active);
 		// Initialize other components here
 	}
 
